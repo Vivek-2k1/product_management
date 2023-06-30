@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="heading">Category</h2>
+    <div class="container">
+    <form method="POST" class="sub-container">
+        {% csrf_token %}
+            {{fm.as_p}}
+            <input type="submit" value="Save">
+    </form>
+    
+    {{msg}}
+    </div>
+
+    <div class="container">
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Product Count</th>
+        </tr>
+        {% for category in categories %}
+        <tr>
+            <td>{{ category.name }}</td>
+            <td>{{ category.products.count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+{% endblock %}

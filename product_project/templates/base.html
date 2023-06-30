@@ -1,0 +1,16 @@
+{% load static %}
+
+<html>
+	<head>
+		<title>Products</title>
+		<link rel="stylesheet" href="{% static 'c1.css' %}"/>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="{% url 'product' %}">Product</a>
+			<a href="{% url 'category' %}">Catagory</a>
+		</div>
+        {% block content %}
+        {% endblock %}
+	</body>
+</html>

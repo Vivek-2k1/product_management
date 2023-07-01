@@ -21,6 +21,21 @@
     text-align: center;
 }
 
+.sub-container {
+  background-color: #FFF4F4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.sub-container input[type="text"],
+.sub-container textarea,
+.sub-container input[type="number"]{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #F7E6C4;
+}
 
 .sub-container input[type="submit"] {
     background-color: #F1C376;
@@ -33,6 +48,9 @@
   }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 400px;
     margin: 0 auto;
@@ -48,6 +66,9 @@
 table {
   width: 100%;
   border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 table th, table td {
@@ -57,8 +78,14 @@ table th, table td {
 }
 
 table th {
-  background-color: #f2f2f2;
+  background-color: #606C5D;
   font-weight: bold;
+  color: #FFF4F4;
+}
+
+table td,
+table td ul{
+  background-color: #F7E6C4;
 }
 
 table tr:hover {
